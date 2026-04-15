@@ -19,18 +19,20 @@ Elle permet aussi aux médecins de :
 •	partager des ordonnances ou comptes rendus.
 
 # 2. Décrire l’application
-Objectif
+
 L’objectif de MediLink est de simplifier l’accès aux soins en centralisant la prise de rendez-vous, le suivi administratif et certains échanges entre patients et professionnels de santé.
-Problèmes résolus
+
 Cette application répond à plusieurs problèmes :
+
 •	difficulté à obtenir rapidement un rendez-vous,
 •	appels téléphoniques trop longs pour réserver,
 •	oublis de rendez-vous,
 •	mauvaise organisation des dossiers et documents,
 •	manque de visibilité sur les disponibilités des médecins,
 •	surcharge administrative pour les secrétariats médicaux.
-Utilité
+
 L’application est utile car elle :
+
 •	fait gagner du temps aux patients,
 •	réduit les appels téléphoniques,
 •	améliore l’organisation des cabinets,
@@ -38,7 +40,9 @@ L’application est utile car elle :
 •	facilite le suivi des documents médicaux.
  
 # 3. Fonctionnalités principales
-Côté patient
+
+Côté patient :
+
 •	créer un compte,
 •	se connecter,
 •	modifier son profil,
@@ -51,7 +55,9 @@ Côté patient
 •	déposer des documents médicaux,
 •	consulter des ordonnances ou comptes rendus,
 •	laisser un avis sur le praticien.
-Côté médecin
+
+Côté médecin :
+
 •	créer un compte professionnel,
 •	renseigner sa spécialité,
 •	définir ses horaires de consultation,
@@ -62,7 +68,9 @@ Côté médecin
 •	déposer une ordonnance,
 •	déposer un compte rendu,
 •	suivre l’historique des rendez-vous.
-Côté administrateur
+
+Côté administrateur :
+
 •	gérer les comptes utilisateurs,
 •	vérifier les comptes médecins,
 •	modérer les avis,
