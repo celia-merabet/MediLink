@@ -78,7 +78,7 @@ Côté administrateur :
 •	gérer les catégories de spécialités médicales,
 •	consulter des statistiques globales.
  
-# 4. Liste brute des fonctionnalités
+# Étape 1 — 4. Liste brute des fonctionnalités
 •	créer un compte patient
 •	créer un compte médecin
 •	se connecter
@@ -106,7 +106,7 @@ Côté administrateur :
 •	valider les comptes médecins
 •	consulter les statistiques de la plateforme
  
-# 5. Tri des fonctionnalités par domaines métiers
+# Étape 2 - 5. Tri des fonctionnalités par domaines métiers
 
 Domaine 1 : Gestion des utilisateurs
 
@@ -173,3 +173,75 @@ Améliorer la qualité du service et superviser la plateforme.
 •	MedicalDocumentManagement
 •	NotificationManagement
 •	Administration
+
+# Étape 3 — Entités métier principales
+Utilisateur
+
+•	id
+•	nom
+•	prénom
+•	email
+•	motDePasse
+•	rôle
+•	téléphone
+
+Patient
+
+•	idPatient
+•	numéroSécuritéSociale
+•	dateNaissance
+•	adresse
+
+Médecin
+
+•	idMedecin
+•	spécialité
+•	numéroRPPS
+•	ville
+•	adresseCabinet
+
+Créneau
+
+•	idCréneau
+•	date
+•	heureDébut
+•	heureFin
+•	disponibilité
+
+RendezVous
+
+•	idRendezVous
+•	dateHeure
+•	statut
+•	motif
+•	patient
+•	médecin
+•	créneau
+
+DocumentMedical
+
+•	idDocument
+•	typeDocument
+•	fichier
+•	dateDepot
+•	patient
+•	médecin
+
+Avis
+
+•	idAvis
+•	note
+•	commentaire
+•	date
+•	patient
+•	médecin
+
+Notification
+
+•	idNotification
+•	type
+•	contenu
+•	dateEnvoi
+•	statut
+
+
