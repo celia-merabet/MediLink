@@ -157,3 +157,13 @@ Fonctionnalités :
 •	consulter les statistiques de la plateforme
 Rôle :
 Améliorer la qualité du service et superviser la plateforme.
+
+# 6. Modules de conception
+À partir des domaines métiers, on déduit les modules suivants :
+•	UserManagement
+•	DoctorDirectory
+•	AppointmentManagement
+•	MedicalDocumentManagement
+•	NotificationManagement
+•	Administration
+<img width="470" height="180" alt="image" src="https://github.com/user-attachments/assets/091fedc0-8d9f-47d3-95e7-92061d0a9839" />
