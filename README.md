@@ -3,8 +3,10 @@ Sujet proposé : MediLink
 Application de prise de rendez-vous et de suivi médical
 
 Type : 
+
 Application web et mobile de gestion de rendez-vous médicaux et de suivi patient.
 Idée : 
+
 MediLink permet aux patients de :
 •	rechercher un professionnel de santé,
 •	prendre rendez-vous en ligne,
@@ -164,4 +166,3 @@ Améliorer la qualité du service et superviser la plateforme.
 •	MedicalDocumentManagement
 •	NotificationManagement
 •	Administration
-<img width="470" height="180" alt="image" src="https://github.com/user-attachments/assets/091fedc0-8d9f-47d3-95e7-92061d0a9839" />
