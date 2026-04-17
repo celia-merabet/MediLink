@@ -1,260 +1,277 @@
 # MediLink
-#### Sujet proposé : MediLink
-#### Application de prise de rendez-vous et de suivi médical
+Sujet proposé : MediLink
+Application de prise de rendez-vous et de suivi médical
 
-#### Type :  Application web et mobile de gestion de rendez-vous médicaux et de suivi patient.
+Type :  Application web et mobile de gestion de rendez-vous médicaux et de suivi patient.
 
-# Idée  
+Idée : 
 
 MediLink permet aux patients de :
-- Rechercher un professionnel de santé,
-- Prendre rendez-vous en ligne,
-- Recevoir des rappels,
-- Consulter leur historique de rendez-vous,
-- Déposer des documents médicaux.
+•	rechercher un professionnel de santé,
+•	prendre rendez-vous en ligne,
+•	recevoir des rappels,
+•	consulter leur historique de rendez-vous,
+•	déposer des documents médicaux.
 Elle permet aussi aux médecins de :
-- Gérer leur agenda,
-- Consulter les demandes de rendez-vous,
-- Suivre les patients,
-- Partager des ordonnances ou comptes rendus.
+•	gérer leur agenda,
+•	consulter les demandes de rendez-vous,
+•	suivre les patients,
+•	partager des ordonnances ou comptes rendus.
 
-# Décrire l’application
+# 2. Décrire l’application
 
-L’objectif de *MediLink* est de simplifier l’accès aux soins en centralisant la prise de rendez-vous, le suivi administratif et certains échanges entre patients et professionnels de santé.
+L’objectif de MediLink est de simplifier l’accès aux soins en centralisant la prise de rendez-vous, le suivi administratif et certains échanges entre patients et professionnels de santé.
 
 Cette application répond à plusieurs problèmes :
 
-- Difficulté à obtenir rapidement un rendez-vous,
-- Appels téléphoniques trop longs pour réserver,
-- Oublis de rendez-vous,
-- Mauvaise organisation des dossiers et documents,
-- Manque de visibilité sur les disponibilités des médecins,
-- Surcharge administrative pour les secrétariats médicaux.
+•	difficulté à obtenir rapidement un rendez-vous,
+•	appels téléphoniques trop longs pour réserver,
+•	oublis de rendez-vous,
+•	mauvaise organisation des dossiers et documents,
+•	manque de visibilité sur les disponibilités des médecins,
+•	surcharge administrative pour les secrétariats médicaux.
 
 L’application est utile car elle :
 
-- Fait gagner du temps aux patients,
-- Réduit les appels téléphoniques,
-- Améliore l’organisation des cabinets,
-- Limite les rendez-vous oubliés grâce aux rappels,
-- Facilite le suivi des documents médicaux.
+•	fait gagner du temps aux patients,
+•	réduit les appels téléphoniques,
+•	améliore l’organisation des cabinets,
+•	limite les rendez-vous oubliés grâce aux rappels,
+•	facilite le suivi des documents médicaux.
  
-# Fonctionnalités principales
+# 3. Fonctionnalités principales
 
-**Côté patient :**
+Côté patient :
 
-- Créer un compte,
-- Se connecter,
-- Modifier son profil,
-- Rechercher un médecin par spécialité, ville ou nom,
-- Consulter les créneaux disponibles,
-- Prendre rendez-vous,
-- Annuler ou déplacer un rendez-vous,
-- Recevoir des rappels par notification ou email,
-- Consulter l’historique des rendez-vous,
-- Déposer des documents médicaux,
-- Consulter des ordonnances ou comptes rendus,
-- Laisser un avis sur le praticien.
+•	créer un compte,
+•	se connecter,
+•	modifier son profil,
+•	rechercher un médecin par spécialité, ville ou nom,
+•	consulter les créneaux disponibles,
+•	prendre rendez-vous,
+•	annuler ou déplacer un rendez-vous,
+•	recevoir des rappels par notification ou email,
+•	consulter l’historique des rendez-vous,
+•	déposer des documents médicaux,
+•	consulter des ordonnances ou comptes rendus,
+•	laisser un avis sur le praticien.
 
-**Côté médecin :**
+Côté médecin :
 
-- créer un compte professionnel,
-- renseigner sa spécialité,
-- définir ses horaires de consultation,
-- ouvrir ou fermer des créneaux,
-- consulter son agenda,
-- accepter ou refuser certaines demandes,
-- consulter le dossier administratif du patient,
-- déposer une ordonnance,
-- déposer un compte rendu,
-- suivre l’historique des rendez-vous.
+•	créer un compte professionnel,
+•	renseigner sa spécialité,
+•	définir ses horaires de consultation,
+•	ouvrir ou fermer des créneaux,
+•	consulter son agenda,
+•	accepter ou refuser certaines demandes,
+•	consulter le dossier administratif du patient,
+•	déposer une ordonnance,
+•	déposer un compte rendu,
+•	suivre l’historique des rendez-vous.
 
-**Côté administrateur :**
+Côté administrateur :
 
-- gérer les comptes utilisateurs,
-- vérifier les comptes médecins,
-- modérer les avis,
-- superviser la plateforme,
-- gérer les catégories de spécialités médicales,
-- consulter des statistiques globales.
+•	gérer les comptes utilisateurs,
+•	vérifier les comptes médecins,
+•	modérer les avis,
+•	superviser la plateforme,
+•	gérer les catégories de spécialités médicales,
+•	consulter des statistiques globales.
  
-# Étape 1 : Liste brute des fonctionnalités
-- créer un compte patient
-- créer un compte médecin
-- se connecter
-- se déconnecter
-- réinitialiser le mot de passe
-- modifier son profil
-- rechercher un médecin
-- filtrer par spécialité
-- filtrer par ville
-- consulter les créneaux disponibles
-- réserver un rendez-vous
-- annuler un rendez-vous
-- reporter un rendez-vous
-- recevoir un rappel
-- consulter l’historique des rendez-vous
-- déposer un document médical
-- consulter un document médical
-- déposer une ordonnance
-- déposer un compte rendu
-- laisser un avis
-- modérer les avis
-- gérer les horaires du médecin
-- ouvrir ou fermer des créneaux
-- gérer les comptes
-- valider les comptes médecins
-- consulter les statistiques de la plateforme
+# Étape 1 — 4. Liste brute des fonctionnalités
+•	créer un compte patient
+•	créer un compte médecin
+•	se connecter
+•	se déconnecter
+•	réinitialiser le mot de passe
+•	modifier son profil
+•	rechercher un médecin
+•	filtrer par spécialité
+•	filtrer par ville
+•	consulter les créneaux disponibles
+•	réserver un rendez-vous
+•	annuler un rendez-vous
+•	reporter un rendez-vous
+•	recevoir un rappel
+•	consulter l’historique des rendez-vous
+•	déposer un document médical
+•	consulter un document médical
+•	déposer une ordonnance
+•	déposer un compte rendu
+•	laisser un avis
+•	modérer les avis
+•	gérer les horaires du médecin
+•	ouvrir ou fermer des créneaux
+•	gérer les comptes
+•	valider les comptes médecins
+•	consulter les statistiques de la plateforme
  
-# Étape 2 : Tri des fonctionnalités par domaines métiers
+# Étape 2 - 5. Tri des fonctionnalités par domaines métiers
 
-## Domaine 1 : Gestion des utilisateurs
+Domaine 1 : Gestion des utilisateurs et authentification
 
-**Fonctionnalités :**
-- créer un compte patient
-- créer un compte médecin
-- se connecter
-- se déconnecter
-- réinitialiser le mot de passe
-- modifier son profil
-- gérer les comptes
-- valider les comptes médecins
+Fonctionnalités :
 
-**Rôle :**
-Ce domaine gère l’identité, les droits et les profils.
- 
-## Domaine 2 : Annuaire médical
+créer un compte patient
+créer un compte médecin
+se connecter
+se déconnecter
+réinitialiser le mot de passe
+modifier son profil
+gérer les comptes
+valider les comptes médecins
 
-**Fonctionnalités :**
-- rechercher un médecin
-- filtrer par spécialité
-- filtrer par ville
+Rôle :
+Gérer l’identité, les rôles (patient/médecin) et la sécurité des accès
 
-**Rôle :**
-Permet de trouver un praticien adapté.
- 
-## Domaine 3 : Gestion des rendez-vous
+ Domaine 2 : Annuaire médical
 
-**Fonctionnalités :**
-- consulter les créneaux disponibles
-- réserver un rendez-vous
-- annuler un rendez-vous
-- reporter un rendez-vous
-- consulter l’historique des rendez-vous
-- gérer les horaires du médecin
-- ouvrir ou fermer des créneaux
+Fonctionnalités :
 
-**Rôle :**
-C’est le cœur fonctionnel de l’application.
- 
-## Domaine 4 : Documents médicaux
+rechercher un médecin
+filtrer par spécialité
+filtrer par ville
 
-**Fonctionnalités :**
-- déposer un document médical
-- consulter un document médical
-- déposer une ordonnance
-- déposer un compte rendu
+Rôle :
+Permettre aux patients de trouver facilement un médecin.
 
-**Rôle :**
-Centraliser les documents liés au suivi du patient.
- 
-## Domaine 5 : Notifications
+Domaine 3 : Gestion des créneaux
 
-**Fonctionnalités :**
-- recevoir un rappel
+Fonctionnalités :
 
-**Rôle :**
-Prévenir les utilisateurs pour éviter les oublis.
- 
-##  Domaine 6 : Administration et qualité
+créer des créneaux
+modifier les créneaux
+supprimer des créneaux
+consulter les disponibilités
 
-**Fonctionnalités :**
-- laisser un avis
-- modérer les avis
-- consulter les statistiques de la plateforme
+Rôle :
+Gérer les disponibilités des médecins.
 
-**Rôle :**
+Domaine 4 : Gestion des rendez-vous
+
+Fonctionnalités :
+
+réserver un rendez-vous
+annuler un rendez-vous
+reporter un rendez-vous
+consulter l’historique des rendez-vous
+
+Rôle :
+Gérer les interactions entre patients et médecins.
+
+Domaine 5 : Documents médicaux
+
+Fonctionnalités :
+
+déposer un document médical
+consulter un document médical
+déposer une ordonnance
+déposer un compte rendu
+
+Rôle :
+Centraliser les informations médicales du patient.
+
+Domaine 6 : Notifications
+
+Fonctionnalités :
+
+recevoir une confirmation de rendez-vous
+recevoir un rappel automatique
+
+Rôle :
+Informer les utilisateurs et réduire les oublis.
+
+Domaine 7 : Avis et administration
+
+Fonctionnalités :
+
+laisser un avis
+modérer les avis
+consulter les statistiques
+
+Rôle :
 Améliorer la qualité du service et superviser la plateforme.
 
-# 6. Modules de conception
+# 6. Modules de conception : 
 
-À partir des domaines métiers, on déduit les modules suivants :
-- UserManagement
-- DoctorDirectory
-- AppointmentManagement
-- MedicalDocumentManagement
-- NotificationManagement
-- Administration
+UserManagement
+AuthenticationService (ajout important)
+DoctorDirectory
+ScheduleManagement (créneaux)
+AppointmentManagement
+MedicalDocumentManagement
+NotificationService
+AdministrationService
 
 # Étape 3 — Entités métier principales
-**Utilisateur**
+Utilisateur
 
-- id
-- nom
-- prénom
-- email
-- motDePasse
-- rôle
-- téléphone
+•	id
+•	nom
+•	prénom
+•	email
+•	motDePasse
+•	rôle
+•	téléphone
 
-**Patient**
+Patient
 
-- idPatient
-- numéroSécuritéSociale
-- dateNaissance
-- adresse
+•	idPatient
+•	numéroSécuritéSociale
+•	dateNaissance
+•	adresse
 
-**Médecin**
+Médecin
 
-- idMedecin
-- spécialité
-- numéroRPPS
-- ville
-- adresseCabinet
+•	idMedecin
+•	spécialité
+•	numéroRPPS
+•	ville
+•	adresseCabinet
 
-**Créneau**
+Créneau
 
-- idCréneau
-- date
-- heureDébut
-- heureFin
-- disponibilité
+•	idCréneau
+•	date
+•	heureDébut
+•	heureFin
+•	disponibilité
 
-**RendezVous**
+RendezVous
 
-- idRendezVous
-- dateHeure
-- statut
-- motif
-- patient
-- médecin
-- créneau
+•	idRendezVous
+•	dateHeure
+•	statut
+•	motif
+•	patient
+•	médecin
+•	créneau
 
-**DocumentMedical**
+DocumentMedical
 
-- idDocument
-- typeDocument
-- fichier
-- dateDepot
-- patient
-- médecin
+•	idDocument
+•	typeDocument
+•	fichier
+•	dateDepot
+•	patient
+•	médecin
 
-**Avis**
+Avis
 
-- idAvis
-- note
-- commentaire
-- date
-- patient
-- médecin
+•	idAvis
+•	note
+•	commentaire
+•	date
+•	patient
+•	médecin
 
-**Notification**
+Notification
 
-- idNotification
-- type
-- contenu
-- dateEnvoi
-- statut
+•	idNotification
+•	type
+•	contenu
+•	dateEnvoi
+•	statut
 
 # 7. Schéma global de l’application
 
@@ -295,48 +312,221 @@ Améliorer la qualité du service et superviser la plateforme.
 ---
 
 ## Relations : 
-* Un utilisateur peut être un patient.
-* Un utilisateur peut être un médecin.
-* Un médecin propose plusieurs créneaux.
-* Un patient réserve plusieurs rendez-vous.
-* Un médecin est concerné par plusieurs rendez-vous.
-* Un rendez-vous utilise un créneau.
-* Un patient possède plusieurs documents médicaux.
-* Un médecin dépose plusieurs documents médicaux.
-* Un patient laisse plusieurs avis.
-* Un médecin reçoit plusieurs avis.
-* Un rendez-vous déclenche plusieurs notifications.
+• Un utilisateur peut être un patient.
+• Un utilisateur peut être un médecin.
+• Un médecin propose plusieurs créneaux.
+• Un patient réserve plusieurs rendez-vous.
+• Un médecin est concerné par plusieurs rendez-vous.
+• Un rendez-vous utilise un créneau.
+• Un patient possède plusieurs documents médicaux.
+• Un médecin dépose plusieurs documents médicaux.
+• Un patient laisse plusieurs avis.
+• Un médecin reçoit plusieurs avis.
+• Un rendez-vous déclenche plusieurs notifications.
 
 ---
 
 # . MLD (Modèle Logique de Données)
 
-## Tables relationnelles
+UTILISATEUR(id_utilisateur PK, nom, prenom, email UNIQUE, mot_de_passe, role, telephone)
 
-**UTILISATEUR :** <br>
-(id_utilisateur PK, nom, prenom, email UNIQUE, mot_de_passe, role, telephone)
+PATIENT(id_patient PK, id_utilisateur FK → UTILISATEUR.id_utilisateur, numero_secu, date_naissance, adresse)
 
-**PATIENT :** <br>
-(id_patient PK, *id_utilisateur FK → UTILISATEUR.id_utilisateur*, numero_secu, date_naissance, adresse)
+MEDECIN(id_medecin PK, id_utilisateur FK → UTILISATEUR.id_utilisateur, specialite, numero_rpps, ville, adresse_cabinet)
 
-**MEDECIN :** <br>
-(id_medecin PK, *id_utilisateur FK → UTILISATEUR.id_utilisateur*, specialite, numero_rpps, ville, adresse_cabinet)
+CRENEAU(id_creneau PK, id_medecin FK → MEDECIN.id_medecin, date_creneau, heure_debut, heure_fin, disponibilite)
 
-**CRENEAU :** <br>
-(id_creneau PK, *id_medecin FK → MEDECIN.id_medecin*, date_creneau, heure_debut, heure_fin, disponibilite)
+RENDEZVOUS(id_rendezvous PK, id_patient FK → PATIENT.id_patient, id_medecin FK → MEDECIN.id_medecin, id_creneau FK → CRENEAU.id_creneau, date_heure, statut, motif)
 
-**RENDEZVOUS :** <br>
-(id_rendezvous PK, *id_patient FK → PATIENT.id_patient*, *id_medecin FK → MEDECIN.id_medecin*, *id_creneau FK → CRENEAU.id_creneau*, date_heure, statut, motif)
+DOCUMENT_MEDICAL(id_document PK, id_patient FK → PATIENT.id_patient, id_medecin FK → MEDECIN.id_medecin, type_document, fichier, date_depot)
 
-**DOCUMENT_MEDICAL :** <br>
-(id_document PK, *id_patient FK → PATIENT.id_patient*, *id_medecin FK → MEDECIN.id_medecin*, type_document, fichier, date_depot)
+AVIS(id_avis PK, id_patient FK → PATIENT.id_patient, id_medecin FK → MEDECIN.id_medecin, note, commentaire, date_avis)
 
-**AVIS :** <br>
-(id_avis PK, *id_patient FK → PATIENT.id_patient*, *id_medecin FK → MEDECIN.id_medecin*, note, commentaire, date_avis)
-
-**NOTIFICATION :** <br>
-(id_notification PK, *id_rendezvous FK → RENDEZVOUS.id_rendezvous*, type_notification, contenu, date_envoi, statut)
+NOTIFICATION(id_notification PK, id_rendezvous FK → RENDEZVOUS.id_rendezvous, type_notification, contenu, date_envoi, statut)
 
 ---
+
+
+# Étape 4 — Composants techniques
+
+On définit ici l’architecture interne de l’application en séparant le code en couches techniques afin de garantir une organisation claire, une meilleure maintenance et une évolutivité du système.
+
+
+ 1. Controller (Couche de contrôle) :
+    
+Reçoit les requêtes de l’interface (web / mobile)
+Traite les demandes des utilisateurs (patient, médecin)
+Oriente les actions vers la couche Service
+Retourne les réponses (JSON / API)
+
+par exemple :créer un rendez-vous
+consulter les créneaux
+s’inscrire / se connecter 
+
+ 2. Service (Couche métier) :
+ 
+Contient la logique métier de l’application
+Applique les règles de gestion
+vérification des disponibilités
+validation des rendez-vous
+gestion des notifications
+Coordonne les actions entre Controller et Repository
+
+
+
+ 3. Repository (Couche d’accès aux données) :
+
+Communique directement avec la base de données
+Gère les opérations CRUD :
+Create (ajouter)
+Read (lire)
+Update (modifier)
+Delete (supprimer)
+Manipule les entités (Utilisateur, Rendez-vous, etc.)
+
+ 4. API REST (communication globale) :
+
+Permet la communication entre frontend et backend
+Utilise généralement JSON
+Expose les endpoints :
+/users
+/appointments
+/doctors
+
+6. Sécurité (authentification) :
+
+Gestion des connexions utilisateurs
+Authentification par JWT (token)
+Contrôle des rôles :
+patient
+médecin
+administrateur
+ 
+ 7. Services externes :
+
+Service de notifications (email / push)
+Service de stockage des documents médicaux
+Planification des rappels automatiques
+
+
+
+#  Schéma d’Architecture (N-Tier / Microservices)
+
+## Choix : Architecture N-Tier (3 couches)
+
+### 1. Couche Présentation (Frontend)
+
+Application Web (React) ou Mobile
+Rôle : Interface utilisateur (patient / médecin),Affichage des rendez-vous, créneaux, documents
+
+
+###  2. Couche Métier (Backend / API)
+
+  Node.js / Express (ou Java Spring Boot si vous voulez)
+  Rôle : Gestion des règles métiers, Gestion des rendez-vous, Gestion des utilisateurs, Gestion des notifications, API REST
+
+
+### 3. Couche Données (Database + Storage)
+
+ Base de données SQL (MySQL / PostgreSQL)
+ Stockage fichiers (documents médicaux)
+
+# 2. Base de données : SQL vs NoSQL
+
+## notre Choix : Base de données SQL
+
+### raison ?
+
+Notre application contient :
+
+* des relations complexes (patient ↔ médecin ↔ rendez-vous)
+* des données structurées
+* des contraintes fortes (sécurité médicale)
+
+---
+
+
+
+#  3. ADR (Architecture Decision Records)
+
+## 📌 ADR 1 — Choix de l’architecture N-Tier
+
+### Contexte
+
+Nous devons concevoir une application de santé avec plusieurs utilisateurs (patients, médecins).
+
+### Décision
+
+Nous avons choisi une architecture **3-tiers (N-Tier)** :
+
+* Frontend
+* Backend API
+* Base de données
+
+### Justification
+
+* séparation claire des responsabilités
+* maintenance facile
+* évolutif
+* standard des applications web modernes
+
+---
+
+## 📌 ADR 2 — Choix de SQL comme base de données
+
+### Contexte
+
+L’application manipule des données relationnelles complexes (rendez-vous, utilisateurs, médecins).
+
+### Décision
+
+Utilisation d’une base de données **SQL (MySQL/PostgreSQL)**
+
+### Justification
+
+* gestion des relations (JOIN)
+* cohérence des données (ACID)
+* sécurité adaptée aux données médicales
+* requêtes structurées efficaces
+
+---
+
+## 📌 ADR 3 — Choix API REST
+
+### Contexte
+
+Frontend et backend doivent communiquer.
+
+### Décision
+
+Utilisation d’une **API REST**
+
+### Justification
+
+* standard du web
+* compatible web et mobile
+* simple à tester (Postman)
+* séparation frontend/backend
+
+---
+
+##  ADR 4 — Stockage des documents
+
+### Contexte
+
+Les patients et médecins échangent des fichiers médicaux.
+
+### Décision
+
+Stockage dans un **service de fichiers externe** (ou serveur dédié)
+
+### Justification
+
+* éviter de surcharger la base SQL
+* meilleure performance
+* plus sécurisé et scalable
+
+---
+
 
 
