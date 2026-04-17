@@ -275,7 +275,6 @@ Notification
 
 # 7. Schéma global de l’application
 
-
                       Patient                         Médecin
                          \                             /
                           \                           /
@@ -297,10 +296,7 @@ Notification
        v
  Stockage des documents médicaux
  (PDF, ordonnances, comptes rendus)
-
-
- 
-
+Explication du schéma
 
 ---
 
