@@ -293,7 +293,6 @@ Notification
              v
       Stockage documents
 
-   Voici une version **claire, propre et prête à rendre** de ton **MCD + MLD** 👇
 
 ---
 
