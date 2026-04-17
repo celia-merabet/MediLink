@@ -463,19 +463,17 @@ Plus tard, on pourrait séparer :
 
 #  3. ADR (Architecture Decision Records)
 
-
 # ADR-001 — Choix d’une architecture monolithe modulaire pour MedLink
 
-## Statut
-
-**Acceptée**
+## Statut : Accepté — 2026-04-17
 
 ## Contexte
 
-MedLink est une application de prise de rendez-vous médical reliant patients et médecins.
-
-Contraintes :
-petite équipe de développement, besoin d’un développement rapide ,absence d’infrastructure DevOps complexe, nécessité de garantir la cohérence des données (rendez-vous, créneaux, utilisateurs)
+Projet MedLink de prise de rendez-vous médical entre patients et médecins.
+Équipe de développement réduite.
+Pas d’infrastructure DevOps avancée.
+Besoin de rapidité de développement et de simplicité de déploiement.
+Données fortement liées (utilisateurs, rendez-vous, créneaux, documents)
 
 ## Décision
 
@@ -501,68 +499,46 @@ L’application est structurée en couches : Controller Service Repository
 
 ## Alternatives rejetées
 
-###  Microservices
-
-* Complexité trop élevée pour le projet
-* Besoin d’infrastructure (Docker, orchestration)
-* Communication inter-services inutile à ce stade
-* Surcoût de développement et de maintenance
+Microservices : trop complexe pour une petite équipe, besoin d’infrastructure (Docker, orchestration), coût opérationnel élevé et sur-ingénierie pour la version initiale du projet.
 
 
 
 #  ADR-002 — Choix de la base de données
 
-## Statut
-
-**Acceptée**
+## Statut : Acceptée — 2026-04-17
 
 ##  Contexte
 
-MedLink gère des données fortement liées entre elles :
-
-* utilisateurs médecins rendez-vous créneaux documents médicaux
+MedLink gère des données fortement relationnelles : patients, médecins, rendez-vous, créneaux et documents médicaux.
+Besoin de cohérence et de transactions fiables
 
 ## Décision
 
-Nous choisissons :
-
-PostgreSQL pour les données principales (relationnelles), Redis pour les notifications temporaires et sessions
+Nous choisissons d’utiliser  PostgreSQL (ou MySQL) comme base de données principale.
+Redis utilisé pour les données temporaires (sessions, notifications)
 
 
 ##  Conséquences
 
-###  Positives
-
-* Respect des transactions (ACID)
-* Requêtes complexes facilitées
-* Bonne cohérence des données
-* Technologie mature et stable
-
-###  Négatives
-
-* Scalabilité horizontale plus complexe
-* Nécessite optimisation pour très gros volumes
++ Respect des transactions (ACID)
++ Requêtes complexes facilitées
++ Bonne cohérence des données
++ Technologie mature et stable
+- Scalabilité horizontale plus complexe
+- Nécessite optimisation pour très gros volumes
 
 
 ##  Alternatives rejetées
 
-### MongoDB
+MongoDB : modèle non relationnel inadapté aux fortes relations entre entités
 
-* Pas nécessaire pour des données relationnelles
-* Perte de cohérence transactionnelle
-
-### DynamoDB
-
-* Complexité inutile pour le projet
-* Coût et vendor lock-in
+DynamoDB : complexité inutile et coût élevé pour le projet
 
 
 
 # ADR-003 — Choix du système de notifications
 
-## Statut
-
-**Acceptée**
+## Statut: Acceptée — 2026-04-17
 
 ##  Contexte
 
@@ -575,23 +551,15 @@ Nous utilisons un système basé sur le pattern Observer avec un service de noti
 
 ## Conséquences
 
-### Positives
-
-* Notifications automatiques
-* Découplage entre rendez-vous et notifications
-* Facile à étendre (email, push, SMS)
-
-### Négatives
-
-* Complexité légère supplémentaire
-* Gestion des événements à surveiller
++ Notifications automatiques
++ Découplage entre rendez-vous et notifications
++ Facile à étendre (email, push, SMS)
+- Complexité légère supplémentaire
+- Gestion des événements à surveiller
 
 ## Alternatives rejetées
 
-###  Envoi manuel de notifications
-
-* Trop rigide
-* Risque d’oubli dans le code métier
+Envoi manuel des notifications depuis le module rendez-vous : trop couplé, difficile à maintenir et risqué d’erreurs
 
 ---
 
