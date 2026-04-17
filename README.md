@@ -464,7 +464,7 @@ Plus tard, on pourrait séparer :
 #  3. ADR (Architecture Decision Records)
 
 
-# 📄 ADR-001 — Choix d’une architecture monolithe modulaire pour MedLink
+# ADR-001 — Choix d’une architecture monolithe modulaire pour MedLink
 
 ## Statut
 
@@ -569,7 +569,7 @@ PostgreSQL pour les données principales (relationnelles), Redis pour les notifi
 
 
 
-# 📄 ADR-003 — Choix du système de notifications
+# ADR-003 — Choix du système de notifications
 
 ## Statut
 
