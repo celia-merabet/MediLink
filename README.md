@@ -520,12 +520,17 @@ Redis utilisé pour les données temporaires (sessions, notifications)
 
 ##  Conséquences
 
-+ Respect des transactions (ACID)
-+ Requêtes complexes facilitées
-+ Bonne cohérence des données
-+ Technologie mature et stable
-- Scalabilité horizontale plus complexe
-- Nécessite optimisation pour très gros volumes
+\+ Respect des transactions (ACID)
+
+\+ Requêtes complexes facilitées
+
+\+ Bonne cohérence des données
+
+\+ Technologie mature et stable
+
+\- Scalabilité horizontale plus complexe
+
+\- Nécessite optimisation pour très gros volumes
 
 
 ##  Alternatives rejetées
@@ -552,10 +557,14 @@ Nous utilisons un système basé sur le pattern Observer avec un service de noti
 ## Conséquences
 
 \+ Notifications automatiques
+
 \+ Découplage entre rendez-vous et notifications
-+ Facile à étendre (email, push, SMS)
-- Complexité légère supplémentaire
-- Gestion des événements à surveiller
+
+\+ Facile à étendre (email, push, SMS)
+
+\- Complexité légère supplémentaire
+
+\- Gestion des événements à surveiller
 
 ## Alternatives rejetées
 
