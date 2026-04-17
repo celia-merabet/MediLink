@@ -1,114 +1,113 @@
 # MediLink
-Sujet proposé : MediLink
-Application de prise de rendez-vous et de suivi médical
+#### Sujet proposé : MediLink
+#### Application de prise de rendez-vous et de suivi médical
 
-Type :  Application web et mobile de gestion de rendez-vous médicaux et de suivi patient.
+#### Type :  Application web et mobile de gestion de rendez-vous médicaux et de suivi patient.
 
-Idée : 
+# Idée : 
 
 MediLink permet aux patients de :
-•	rechercher un professionnel de santé,
-•	prendre rendez-vous en ligne,
-•	recevoir des rappels,
-•	consulter leur historique de rendez-vous,
-•	déposer des documents médicaux.
+- rechercher un professionnel de santé,
+- prendre rendez-vous en ligne,
+- recevoir des rappels,
+- consulter leur historique de rendez-vous,
+- déposer des documents médicaux.
 Elle permet aussi aux médecins de :
-•	gérer leur agenda,
-•	consulter les demandes de rendez-vous,
-•	suivre les patients,
-•	partager des ordonnances ou comptes rendus.
+- gérer leur agenda,
+- consulter les demandes de rendez-vous,
+- suivre les patients,
+- partager des ordonnances ou comptes rendus.
 
-# 2. Décrire l’application
+# Décrire l’application
 
 L’objectif de MediLink est de simplifier l’accès aux soins en centralisant la prise de rendez-vous, le suivi administratif et certains échanges entre patients et professionnels de santé.
 
 Cette application répond à plusieurs problèmes :
 
-•	difficulté à obtenir rapidement un rendez-vous,
-•	appels téléphoniques trop longs pour réserver,
-•	oublis de rendez-vous,
-•	mauvaise organisation des dossiers et documents,
-•	manque de visibilité sur les disponibilités des médecins,
-•	surcharge administrative pour les secrétariats médicaux.
+- difficulté à obtenir rapidement un rendez-vous,
+- appels téléphoniques trop longs pour réserver,
+- oublis de rendez-vous,
+- mauvaise organisation des dossiers et documents,
+- manque de visibilité sur les disponibilités des médecins,
+- surcharge administrative pour les secrétariats médicaux.
 
 L’application est utile car elle :
 
-•	fait gagner du temps aux patients,
-•	réduit les appels téléphoniques,
-•	améliore l’organisation des cabinets,
-•	limite les rendez-vous oubliés grâce aux rappels,
-•	facilite le suivi des documents médicaux.
+- fait gagner du temps aux patients,
+- réduit les appels téléphoniques,
+- améliore l’organisation des cabinets,
+- limite les rendez-vous oubliés grâce aux rappels,
+- facilite le suivi des documents médicaux.
  
-# 3. Fonctionnalités principales
+# Fonctionnalités principales
 
-Côté patient :
+**Côté patient :**
+- créer un compte,
+- se connecter,
+- modifier son profil,
+- rechercher un médecin par spécialité, ville ou nom,
+- consulter les créneaux disponibles,
+- prendre rendez-vous,
+- annuler ou déplacer un rendez-vous,
+- recevoir des rappels par notification ou email,
+- consulter l’historique des rendez-vous,
+- déposer des documents médicaux,
+- consulter des ordonnances ou comptes rendus,
+- laisser un avis sur le praticien.
 
-•	créer un compte,
-•	se connecter,
-•	modifier son profil,
-•	rechercher un médecin par spécialité, ville ou nom,
-•	consulter les créneaux disponibles,
-•	prendre rendez-vous,
-•	annuler ou déplacer un rendez-vous,
-•	recevoir des rappels par notification ou email,
-•	consulter l’historique des rendez-vous,
-•	déposer des documents médicaux,
-•	consulter des ordonnances ou comptes rendus,
-•	laisser un avis sur le praticien.
+**Côté médecin :**
 
-Côté médecin :
+- créer un compte professionnel,
+- renseigner sa spécialité,
+- définir ses horaires de consultation,
+- ouvrir ou fermer des créneaux,
+- consulter son agenda,
+- accepter ou refuser certaines demandes,
+- consulter le dossier administratif du patient,
+- déposer une ordonnance,
+- déposer un compte rendu,
+- suivre l’historique des rendez-vous.
 
-•	créer un compte professionnel,
-•	renseigner sa spécialité,
-•	définir ses horaires de consultation,
-•	ouvrir ou fermer des créneaux,
-•	consulter son agenda,
-•	accepter ou refuser certaines demandes,
-•	consulter le dossier administratif du patient,
-•	déposer une ordonnance,
-•	déposer un compte rendu,
-•	suivre l’historique des rendez-vous.
+**Côté administrateur :**
 
-Côté administrateur :
-
-•	gérer les comptes utilisateurs,
-•	vérifier les comptes médecins,
-•	modérer les avis,
-•	superviser la plateforme,
-•	gérer les catégories de spécialités médicales,
-•	consulter des statistiques globales.
+- gérer les comptes utilisateurs,
+- vérifier les comptes médecins,
+- modérer les avis,
+- superviser la plateforme,
+- gérer les catégories de spécialités médicales,
+- consulter des statistiques globales.
  
-# Étape 1 — 4. Liste brute des fonctionnalités
-•	créer un compte patient
-•	créer un compte médecin
-•	se connecter
-•	se déconnecter
-•	réinitialiser le mot de passe
-•	modifier son profil
-•	rechercher un médecin
-•	filtrer par spécialité
-•	filtrer par ville
-•	consulter les créneaux disponibles
-•	réserver un rendez-vous
-•	annuler un rendez-vous
-•	reporter un rendez-vous
-•	recevoir un rappel
-•	consulter l’historique des rendez-vous
-•	déposer un document médical
-•	consulter un document médical
-•	déposer une ordonnance
-•	déposer un compte rendu
-•	laisser un avis
-•	modérer les avis
-•	gérer les horaires du médecin
-•	ouvrir ou fermer des créneaux
-•	gérer les comptes
-•	valider les comptes médecins
-•	consulter les statistiques de la plateforme
+# Étape 1 Liste brute des fonctionnalités
+- créer un compte patient
+- créer un compte médecin
+- se connecter
+- se déconnecter
+- réinitialiser le mot de passe
+- modifier son profil
+- rechercher un médecin
+- filtrer par spécialité
+- filtrer par ville
+- consulter les créneaux disponibles
+- réserver un rendez-vous
+- annuler un rendez-vous
+- reporter un rendez-vous
+- recevoir un rappel
+- consulter l’historique des rendez-vous
+- déposer un document médical
+- consulter un document médical
+- déposer une ordonnance
+- déposer un compte rendu
+- laisser un avis
+- modérer les avis
+- gérer les horaires du médecin
+- ouvrir ou fermer des créneaux
+- gérer les comptes
+- valider les comptes médecins
+- consulter les statistiques de la plateforme
  
-# Étape 2 - 5. Tri des fonctionnalités par domaines métiers
+# Étape 2 Tri des fonctionnalités par domaines métiers
 
-Domaine 1 : Gestion des utilisateurs et authentification
+## Domaine 1 : Gestion des utilisateurs et authentification
 
 Fonctionnalités :
 
@@ -121,157 +120,157 @@ modifier son profil
 gérer les comptes
 valider les comptes médecins
 
-Rôle :
+**Rôle :**
 Gérer l’identité, les rôles (patient/médecin) et la sécurité des accès
 
- Domaine 2 : Annuaire médical
+## Domaine 2 : Annuaire médical
 
 Fonctionnalités :
 
-rechercher un médecin
-filtrer par spécialité
-filtrer par ville
+- rechercher un médecin
+- filtrer par spécialité
+- filtrer par ville
 
-Rôle :
+**Rôle :**
 Permettre aux patients de trouver facilement un médecin.
 
-Domaine 3 : Gestion des créneaux
+## Domaine 3 : Gestion des créneaux
 
 Fonctionnalités :
 
-créer des créneaux
-modifier les créneaux
-supprimer des créneaux
-consulter les disponibilités
+- créer des créneaux
+- modifier les créneaux
+- supprimer des créneaux
+- consulter les disponibilités
 
-Rôle :
+**Rôle :**
 Gérer les disponibilités des médecins.
 
-Domaine 4 : Gestion des rendez-vous
+## Domaine 4 : Gestion des rendez-vous
 
 Fonctionnalités :
 
-réserver un rendez-vous
-annuler un rendez-vous
-reporter un rendez-vous
-consulter l’historique des rendez-vous
+- réserver un rendez-vous
+- annuler un rendez-vous
+- reporter un rendez-vous
+- consulter l’historique des rendez-vous
 
-Rôle :
+**Rôle :**
 Gérer les interactions entre patients et médecins.
 
-Domaine 5 : Documents médicaux
+## Domaine 5 : Documents médicaux
 
-Fonctionnalités :
+**Fonctionnalités :**
 
-déposer un document médical
-consulter un document médical
-déposer une ordonnance
-déposer un compte rendu
+- déposer un document médical
+- consulter un document médical
+- déposer une ordonnance
+- déposer un compte rendu
 
-Rôle :
+**Rôle :**
 Centraliser les informations médicales du patient.
 
-Domaine 6 : Notifications
+## Domaine 6 : Notifications
 
-Fonctionnalités :
+**Fonctionnalités :**
 
-recevoir une confirmation de rendez-vous
-recevoir un rappel automatique
+- recevoir une confirmation de rendez-vous
+- recevoir un rappel automatique
 
-Rôle :
+**Rôle :**
 Informer les utilisateurs et réduire les oublis.
 
-Domaine 7 : Avis et administration
+## Domaine 7 : Avis et administration
 
-Fonctionnalités :
+**Fonctionnalités :**
 
-laisser un avis
-modérer les avis
-consulter les statistiques
+- laisser un avis
+- modérer les avis
+- consulter les statistiques
 
-Rôle :
+**Rôle :**
 Améliorer la qualité du service et superviser la plateforme.
 
 # 6. Modules de conception : 
 
-UserManagement
-AuthenticationService (ajout important)
-DoctorDirectory
-ScheduleManagement (créneaux)
-AppointmentManagement
-MedicalDocumentManagement
-NotificationService
-AdministrationService
+- UserManagement
+- AuthenticationService (ajout important)
+- DoctorDirectory
+- ScheduleManagement (créneaux)
+- AppointmentManagement
+- MedicalDocumentManagement
+- NotificationService
+- AdministrationService
 
 # Étape 3 — Entités métier principales
-Utilisateur
+**Utilisateur**
 
-•	id
-•	nom
-•	prénom
-•	email
-•	motDePasse
-•	rôle
-•	téléphone
+- id
+- nom
+- prénom
+- email
+- motDePasse
+- rôle
+- téléphone
 
-Patient
+**Patient**
+- idPatient
+- numéroSécuritéSociale
+- dateNaissance
+- adresse
 
-•	idPatient
-•	numéroSécuritéSociale
-•	dateNaissance
-•	adresse
+**Médecin**
 
-Médecin
+- idMedecin
+- spécialité
+- numéroRPPS
+- ville
+- adresseCabinet
 
-•	idMedecin
-•	spécialité
-•	numéroRPPS
-•	ville
-•	adresseCabinet
+**Créneau**
 
-Créneau
+- idCréneau
+- date
+- heureDébut
+- heureFin
+- disponibilité
 
-•	idCréneau
-•	date
-•	heureDébut
-•	heureFin
-•	disponibilité
+**RendezVous**
 
-RendezVous
+- idRendezVous
+- dateHeure
+- statut
+- motif
+- patient
+- médecin
+- créneau
 
-•	idRendezVous
-•	dateHeure
-•	statut
-•	motif
-•	patient
-•	médecin
-•	créneau
+**DocumentMedical**
 
-DocumentMedical
+- idDocument
+- typeDocument
+- fichier
+- dateDepot
+- patient
+- médecin
 
-•	idDocument
-•	typeDocument
-•	fichier
-•	dateDepot
-•	patient
-•	médecin
+**Avis**
 
-Avis
+- idAvis
+- note
+- commentaire
+- date
+- patient
+- médecin
 
-•	idAvis
-•	note
-•	commentaire
-•	date
-•	patient
-•	médecin
+**Notification**
 
-Notification
+- idNotification
+- type
+- contenu
+- dateEnvoi
+- statut
 
-•	idNotification
-•	type
-•	contenu
-•	dateEnvoi
-•	statut
 
 # 7. Schéma global de l’application
 
@@ -300,7 +299,7 @@ Notification
 
 ---
 
-# 8 . MCD (Modèle Conceptuel de Données)
+## MCD (Modèle Conceptuel de Données)
 
 ## Entités
 
@@ -316,37 +315,37 @@ Notification
 ---
 
 ## Relations : 
-• Un utilisateur peut être un patient.
-• Un utilisateur peut être un médecin.
-• Un médecin propose plusieurs créneaux.
-• Un patient réserve plusieurs rendez-vous.
-• Un médecin est concerné par plusieurs rendez-vous.
-• Un rendez-vous utilise un créneau.
-• Un patient possède plusieurs documents médicaux.
-• Un médecin dépose plusieurs documents médicaux.
-• Un patient laisse plusieurs avis.
-• Un médecin reçoit plusieurs avis.
-• Un rendez-vous déclenche plusieurs notifications.
+- Un utilisateur peut être un patient.
+- Un utilisateur peut être un médecin.
+- Un médecin propose plusieurs créneaux.
+- Un patient réserve plusieurs rendez-vous.
+- Un médecin est concerné par plusieurs rendez-vous.
+- Un rendez-vous utilise un créneau.
+- Un patient possède plusieurs documents médicaux.
+- Un médecin dépose plusieurs documents médicaux.
+- Un patient laisse plusieurs avis.
+- Un médecin reçoit plusieurs avis.
+- Un rendez-vous déclenche plusieurs notifications.
 
 ---
 
 # . MLD (Modèle Logique de Données)
 
-UTILISATEUR(id_utilisateur PK, nom, prenom, email UNIQUE, mot_de_passe, role, telephone)
+**UTILISATEUR**(id_utilisateur PK, nom, prenom, email UNIQUE, mot_de_passe, role, telephone)
 
-PATIENT(id_patient PK, id_utilisateur FK → UTILISATEUR.id_utilisateur, numero_secu, date_naissance, adresse)
+**PATIENT**(id_patient PK, *id_utilisateur FK → UTILISATEUR.id_utilisateur*, numero_secu, date_naissance, adresse)
 
-MEDECIN(id_medecin PK, id_utilisateur FK → UTILISATEUR.id_utilisateur, specialite, numero_rpps, ville, adresse_cabinet)
+**MEDECIN**(id_medecin PK, *id_utilisateur FK → UTILISATEUR.id_utilisateur*, specialite, numero_rpps, ville, adresse_cabinet)
 
-CRENEAU(id_creneau PK, id_medecin FK → MEDECIN.id_medecin, date_creneau, heure_debut, heure_fin, disponibilite)
+**CRENEAU**(id_creneau PK, *id_medecin FK → MEDECIN.id_medecin*, date_creneau, heure_debut, heure_fin, disponibilite)
 
-RENDEZVOUS(id_rendezvous PK, id_patient FK → PATIENT.id_patient, id_medecin FK → MEDECIN.id_medecin, id_creneau FK → CRENEAU.id_creneau, date_heure, statut, motif)
+**RENDEZVOUS**(id_rendezvous PK, *id_patient FK → PATIENT.id_patient*, *id_medecin FK → MEDECIN.id_medecin*, id_creneau FK → CRENEAU.id_creneau, date_heure, statut, motif)
 
-DOCUMENT_MEDICAL(id_document PK, id_patient FK → PATIENT.id_patient, id_medecin FK → MEDECIN.id_medecin, type_document, fichier, date_depot)
+**DOCUMENT_MEDICAL**(id_document PK, *id_patient FK → PATIENT.id_patient*, *id_medecin FK → MEDECIN.id_medecin*, type_document, fichier, date_depot)
 
-AVIS(id_avis PK, id_patient FK → PATIENT.id_patient, id_medecin FK → MEDECIN.id_medecin, note, commentaire, date_avis)
+**AVIS**(id_avis PK, *id_patient FK → PATIENT.id_patient*, *id_medecin FK → MEDECIN.id_medecin*, note, commentaire, date_avis)
 
-NOTIFICATION(id_notification PK, id_rendezvous FK → RENDEZVOUS.id_rendezvous, type_notification, contenu, date_envoi, statut)
+**NOTIFICATION**(id_notification PK, id_rendezvous FK → RENDEZVOUS.id_rendezvous, type_notification, contenu, date_envoi, statut)
 
 ---
 
@@ -355,91 +354,89 @@ NOTIFICATION(id_notification PK, id_rendezvous FK → RENDEZVOUS.id_rendezvous, 
 
 On définit ici l’architecture interne de l’application en séparant le code en couches techniques afin de garantir une organisation claire, une meilleure maintenance et une évolutivité du système.
 
-
- 1. Controller (Couche de contrôle) :
+**1. Controller (Couche de contrôle) :**
     
-Reçoit les requêtes de l’interface (web / mobile)
-Traite les demandes des utilisateurs (patient, médecin)
-Oriente les actions vers la couche Service
-Retourne les réponses (JSON / API)
+Reçoit les requêtes de l’interface (web / mobile) <br>
+Traite les demandes des utilisateurs (patient, médecin) <br>
+Oriente les actions vers la couche Service <br>
+Retourne les réponses (JSON / API) <br>
 
-par exemple :créer un rendez-vous
-consulter les créneaux
-s’inscrire / se connecter 
+par exemple : <br>
+créer un rendez-vous <br>
+consulter les créneaux <br>
+s’inscrire / se connecter  <br>
 
- 2. Service (Couche métier) :
+**2. Service (Couche métier) :**
  
-Contient la logique métier de l’application
-Applique les règles de gestion
-vérification des disponibilités
-validation des rendez-vous
-gestion des notifications
-Coordonne les actions entre Controller et Repository
+Contient la logique métier de l’application <br>
+Applique les règles de gestion <br>
+vérification des disponibilités  <br>
+validation des rendez-vous <br>
+gestion des notifications <br>
+Coordonne les actions entre Controller et Repository <br>
 
+**3. Repository (Couche d’accès aux données) :**
 
-
- 3. Repository (Couche d’accès aux données) :
-
-Communique directement avec la base de données
+Communique directement avec la base de données <br>
 Gère les opérations CRUD :
-Create (ajouter)
-Read (lire)
-Update (modifier)
-Delete (supprimer)
+- Create (ajouter)
+- Read (lire)
+- Update (modifier)
+- Delete (supprimer)
 Manipule les entités (Utilisateur, Rendez-vous, etc.)
 
- 4. API REST (communication globale) :
+**4. API REST (communication globale) :**
 
-Permet la communication entre frontend et backend
-Utilise généralement JSON
-Expose les endpoints :
-/users
-/appointments
-/doctors
+Permet la communication entre frontend et backend <br>
+Utilise généralement JSON <br>
+Expose les endpoints : <br>
+- /users
+- /appointments
+- /doctors
 
-6. Sécurité (authentification) :
+**6. Sécurité (authentification) :**
 
 Gestion des connexions utilisateurs
 Authentification par JWT (token)
 Contrôle des rôles :
-patient
-médecin
-administrateur
+- patient
+- médecin
+- administrateur
  
- 7. Services externes :
+ **7. Services externes :**
 
-Service de notifications (email / push)
-Service de stockage des documents médicaux
-Planification des rappels automatiques
-
-
-
-#  Schéma d’Architecture (N-Tier / Microservices)
-
-## Choix : Architecture N-Tier (3 couches)
-
-### 1. Couche Présentation (Frontend)
-
-Application Web (React) ou Mobile
-Rôle : Interface utilisateur (patient / médecin),Affichage des rendez-vous, créneaux, documents
+Service de notifications (email / push) <br>
+Service de stockage des documents médicaux <br>
+Planification des rappels automatiques <br>
 
 
-###  2. Couche Métier (Backend / API)
 
-  Node.js / Express (ou Java Spring Boot si vous voulez)
+##  Schéma d’Architecture (N-Tier / Microservices)
+
+### Choix : Architecture N-Tier (3 couches)
+
+#### 1. Couche Présentation (Frontend)
+
+Application Web (React) ou Mobile <br>
+Rôle : Interface utilisateur (pat**ient /** médecin),Affichage des rendez-vous, créneaux, documents
+
+
+####  2. Couche Métier (Backend / API)
+
+  Node.js / Express (ou Java Spring Boot si vous voulez) <br>
   Rôle : Gestion des règles métiers, Gestion des rendez-vous, Gestion des utilisateurs, Gestion des notifications, API REST
 
 
-### 3. Couche Données (Database + Storage)
+#### 3. Couche Données (Database + Storage)
 
- Base de données SQL (MySQL / PostgreSQL)
- Stockage fichiers (documents médicaux)
+ Base de données SQL (MySQL / PostgreSQL) <br>
+ Stockage fichiers (documents médicaux) <br>
 
-# 2. Base de données : SQL vs NoSQL
+## 2. Base de données : SQL vs NoSQL
 
 notre Choix : Base de données SQL
 
-### raison ?
+#### raison ?
 
 Notre application contient :
 
@@ -447,82 +444,82 @@ Notre application contient :
 * des données structurées
 * des contraintes fortes (sécurité médicale)
 
- # 3. Microservices ou monolithe modulaire
+ ## 3. Microservices ou monolithe modulaire
 Pour ce projet, nous choisissons d’abord un monolithe modulaire.
 Justification
-•	plus simple à développer,
-•	plus simple à déployer,
-•	plus adapté à une première version,
-•	possibilité de découper plus tard en microservices si l’application grossit.
+- plus simple à développer,
+- plus simple à déployer,
+- plus adapté à une première version,
+- possibilité de découper plus tard en microservices si l’application grossit.
 
 Plus tard, on pourrait séparer :
 
-•	service utilisateurs,
-•	service rendez-vous,
-•	service notifications,
-•	service documents.
+- service utilisateurs,
+- service rendez-vous,
+- service notifications,
+- service documents.
 
 
 ---
 
-#  3. ADR (Architecture Decision Records)
+##  3. ADR (Architecture Decision Records)
 
-# ADR-001 — Choix d’une architecture monolithe modulaire pour MedLink
+## ADR-001 — Choix d’une architecture monolithe modulaire pour MedLink
 
-## Statut : Accepté — 2026-04-17
+### Statut : Accepté — 2026-04-17
 
-## Contexte
+### Contexte
 
-Projet MedLink de prise de rendez-vous médical entre patients et médecins.
-Équipe de développement réduite.
-Pas d’infrastructure DevOps avancée.
-Besoin de rapidité de développement et de simplicité de déploiement.
-Données fortement liées (utilisateurs, rendez-vous, créneaux, documents)
+Projet MedLink de prise de rendez-vous médical entre patients et médecins. <br>
+Équipe de développement réduite. <br>
+Pas d’infrastructure DevOps avancée. <br>
+Besoin de rapidité de développement et de simplicité de déploiement. <br>
+Données fortement liées (utilisateurs, rendez-vous, créneaux, documents) <br>
 
-## Décision
+### Décision
 
-Nous adoptons une architecture monolithe modulaire organisée en domaines métiers :
-Gestion des utilisateurs Annuaire médical Gestion des rendez-vous Documents médicaux Notifications Administration
+Nous adoptons une architecture monolithe modulaire organisée en domaines métiers : <br>
+Gestion des utilisateurs Annuaire médical Gestion des rendez-vous Documents médicaux Notifications Administration <br>
 
 L’application est structurée en couches : Controller Service Repository
 
-## Conséquences
+### Conséquences
 
-### Positives
+#### Positives
 
 * Déploiement simple (une seule application)
 * Développement rapide
 * Bonne cohérence des données (transactions ACID)
 * Architecture claire grâce aux modules
 
-### Négatives
+#### Négatives
 
 * Scalabilité limitée (scale-up uniquement)
 * Risque d’impact global en cas de bug critique
 * Évolution vers microservices plus coûteuse
 
-## Alternatives rejetées
+### Alternatives rejetées
 
 Microservices : trop complexe pour une petite équipe, besoin d’infrastructure (Docker, orchestration), coût opérationnel élevé et sur-ingénierie pour la version initiale du projet.
 
 
 
-#  ADR-002 — Choix de la base de données
+##  ADR-002 — Choix de la base de données
 
-## Statut : Acceptée — 2026-04-17
+### Statut : Acceptée — 2026-04-17
 
-##  Contexte
+###  Contexte
 
-MedLink gère des données fortement relationnelles : patients, médecins, rendez-vous, créneaux et documents médicaux.
+MedLink gère des données fortement relationnelles : patients, médecins, rendez-vous, créneaux et documents médicaux. <br>
 Besoin de cohérence et de transactions fiables
 
-## Décision
+### Décision
 
-Nous choisissons d’utiliser  PostgreSQL (ou MySQL) comme base de données principale.
+Nous choisissons d’utiliser  PostgreSQL (ou MySQL) comme base de données principale. <br>
 Redis utilisé pour les données temporaires (sessions, notifications)
 
 
-##  Conséquences
+###  Conséquences
 
 \+ Respect des transactions (ACID)
 
@@ -537,28 +534,28 @@ Redis utilisé pour les données temporaires (sessions, notifications)
 \- Nécessite optimisation pour très gros volumes
 
 
-##  Alternatives rejetées
+###  Alternatives rejetées
 
-MongoDB : modèle non relationnel inadapté aux fortes relations entre entités
+MongoDB : modèle non relationnel inadapté aux fortes relations entre entités <br>
 
-DynamoDB : complexité inutile et coût élevé pour le projet
-
-
-
-# ADR-003 — Choix du système de notifications
-
-## Statut: Acceptée — 2026-04-17
-
-##  Contexte
-
-MedLink doit envoyer :confirmations de rendez-vous, rappels automatiques, notifications aux médecins et patients
+DynamoDB : complexité inutile et coût élevé pour le projet <br>
 
 
-## Décision
 
-Nous utilisons un système basé sur le pattern Observer avec un service de notifications indépendant.
+## ADR-003 — Choix du système de notifications
 
-## Conséquences
+### Statut: Acceptée — 2026-04-17
+
+###  Contexte
+
+MedLink doit envoyer :confirmations de rendez-vous, rappels automatiques, notifications aux médecins et patients <br>
+
+
+### Décision
+
+Nous utilisons un système basé sur le pattern Observer avec un service de notifications indépendant. <br>
+
+### Conséquences
 
 \+ Notifications automatiques
 
@@ -570,7 +567,7 @@ Nous utilisons un système basé sur le pattern Observer avec un service de noti
 
 \- Gestion des événements à surveiller
 
-## Alternatives rejetées
+### Alternatives rejetées
 
 Envoi manuel des notifications depuis le module rendez-vous : trop couplé, difficile à maintenir et risqué d’erreurs
 
