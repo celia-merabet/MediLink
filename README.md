@@ -480,18 +480,9 @@ petite équipe de développement, besoin d’un développement rapide ,absence d
 ## Décision
 
 Nous adoptons une architecture monolithe modulaire organisée en domaines métiers :
+Gestion des utilisateurs Annuaire médical Gestion des rendez-vous Documents médicaux Notifications Administration
 
-* Gestion des utilisateurs
-* Annuaire médical
-* Gestion des rendez-vous
-* Documents médicaux
-* Notifications
-* Administration
-
-L’application est structurée en couches :
- Controller Service Repository
-
-
+L’application est structurée en couches : Controller Service Repository
 
 ## Conséquences
 
@@ -524,8 +515,6 @@ L’application est structurée en couches :
 ## Statut
 
 **Acceptée**
-
----
 
 ##  Contexte
 
@@ -596,8 +585,6 @@ Nous utilisons un système basé sur le pattern Observer avec un service de noti
 
 * Complexité légère supplémentaire
 * Gestion des événements à surveiller
-
----
 
 ## Alternatives rejetées
 
