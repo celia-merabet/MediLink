@@ -108,71 +108,100 @@ Côté administrateur :
  
 # Étape 2 - 5. Tri des fonctionnalités par domaines métiers
 
-Domaine 1 : Gestion des utilisateurs
+Domaine 1 : Gestion des utilisateurs et authentification
 
 Fonctionnalités :
-•	créer un compte patient
-•	créer un compte médecin
-•	se connecter
-•	se déconnecter
-•	réinitialiser le mot de passe
-•	modifier son profil
-•	gérer les comptes
-•	valider les comptes médecins
+
+créer un compte patient
+créer un compte médecin
+se connecter
+se déconnecter
+réinitialiser le mot de passe
+modifier son profil
+gérer les comptes
+valider les comptes médecins
+
 Rôle :
-Ce domaine gère l’identité, les droits et les profils.
- 
-Domaine 2 : Annuaire médical
+Gérer l’identité, les rôles (patient/médecin) et la sécurité des accès
+
+ Domaine 2 : Annuaire médical
+
 Fonctionnalités :
-•	rechercher un médecin
-•	filtrer par spécialité
-•	filtrer par ville
+
+rechercher un médecin
+filtrer par spécialité
+filtrer par ville
+
 Rôle :
-Permet de trouver un praticien adapté.
- 
-Domaine 3 : Gestion des rendez-vous
+Permettre aux patients de trouver facilement un médecin.
+
+Domaine 3 : Gestion des créneaux
+
 Fonctionnalités :
-•	consulter les créneaux disponibles
-•	réserver un rendez-vous
-•	annuler un rendez-vous
-•	reporter un rendez-vous
-•	consulter l’historique des rendez-vous
-•	gérer les horaires du médecin
-•	ouvrir ou fermer des créneaux
+
+créer des créneaux
+modifier les créneaux
+supprimer des créneaux
+consulter les disponibilités
+
 Rôle :
-C’est le cœur fonctionnel de l’application.
- 
-Domaine 4 : Documents médicaux
+Gérer les disponibilités des médecins.
+
+Domaine 4 : Gestion des rendez-vous
+
 Fonctionnalités :
-•	déposer un document médical
-•	consulter un document médical
-•	déposer une ordonnance
-•	déposer un compte rendu
+
+réserver un rendez-vous
+annuler un rendez-vous
+reporter un rendez-vous
+consulter l’historique des rendez-vous
+
 Rôle :
-Centraliser les documents liés au suivi du patient.
- 
-Domaine 5 : Notifications
+Gérer les interactions entre patients et médecins.
+
+Domaine 5 : Documents médicaux
+
 Fonctionnalités :
-•	recevoir un rappel
+
+déposer un document médical
+consulter un document médical
+déposer une ordonnance
+déposer un compte rendu
+
 Rôle :
-Prévenir les utilisateurs pour éviter les oublis.
- 
-Domaine 6 : Administration et qualité
+Centraliser les informations médicales du patient.
+
+Domaine 6 : Notifications
+
 Fonctionnalités :
-•	laisser un avis
-•	modérer les avis
-•	consulter les statistiques de la plateforme
+
+recevoir une confirmation de rendez-vous
+recevoir un rappel automatique
+
+Rôle :
+Informer les utilisateurs et réduire les oublis.
+
+Domaine 7 : Avis et administration
+
+Fonctionnalités :
+
+laisser un avis
+modérer les avis
+consulter les statistiques
+
 Rôle :
 Améliorer la qualité du service et superviser la plateforme.
 
-# 6. Modules de conception
-À partir des domaines métiers, on déduit les modules suivants :
-•	UserManagement
-•	DoctorDirectory
-•	AppointmentManagement
-•	MedicalDocumentManagement
-•	NotificationManagement
-•	Administration
+# 6. Modules de conception : 
+
+UserManagement
+AuthenticationService (ajout important)
+DoctorDirectory
+ScheduleManagement (créneaux)
+AppointmentManagement
+MedicalDocumentManagement
+NotificationService
+AdministrationService
 
 # Étape 3 — Entités métier principales
 Utilisateur
@@ -243,5 +272,153 @@ Notification
 •	contenu
 •	dateEnvoi
 •	statut
+
+# 7. Schéma global de l’application
+
+         Patient                       Médecin
+            |                                |
+            |                                |
+            +----------- Utilisent ----------+
+                            |
+                            v
+                  Interface Web / Mobile
+                            |
+                            v
+                       API Backend
+              _____________|______________
+             |             |              |
+             v             v              v
+    Base de données    Notifications    Authentification
+             |
+             v
+      Stockage documents
+
+   Voici une version **claire, propre et prête à rendre** de ton **MCD + MLD** 👇
+
+---
+
+# 8 . MCD (Modèle Conceptuel de Données)
+
+## Entités
+
+* **UTILISATEUR** *(idUtilisateur, nom, prénom, email, motDePasse, rôle, téléphone)*
+* **PATIENT** *(idPatient, numeroSecu, dateNaissance, adresse)*
+* **MEDECIN** *(idMedecin, specialite, numeroRPPS, ville, adresseCabinet)*
+* **CRENEAU** *(idCreneau, date, heureDebut, heureFin, disponibilite)*
+* **RENDEZVOUS** *(idRendezVous, dateHeure, statut, motif)*
+* **DOCUMENT_MEDICAL** *(idDocument, typeDocument, fichier, dateDepot)*
+* **AVIS** *(idAvis, note, commentaire, dateAvis)*
+* **NOTIFICATION** *(idNotification, type, contenu, dateEnvoi, statut)*
+
+---
+
+## Relations : 
+• Un utilisateur peut être un patient.
+• Un utilisateur peut être un médecin.
+• Un médecin propose plusieurs créneaux.
+• Un patient réserve plusieurs rendez-vous.
+• Un médecin est concerné par plusieurs rendez-vous.
+• Un rendez-vous utilise un créneau.
+• Un patient possède plusieurs documents médicaux.
+• Un médecin dépose plusieurs documents médicaux.
+• Un patient laisse plusieurs avis.
+• Un médecin reçoit plusieurs avis.
+• Un rendez-vous déclenche plusieurs notifications.
+
+
+---
+
+# . MLD (Modèle Logique de Données)
+
+## Tables relationnelles
+
+### UTILISATEUR
+
+* **id_utilisateur** (PK)
+* nom
+* prenom
+* email (UNIQUE)
+* mot_de_passe
+* role
+* telephone
+
+---
+
+### PATIENT
+
+* **id_patient** (PK)
+* id_utilisateur (FK → UTILISATEUR.id_utilisateur)
+* numero_secu
+* date_naissance
+* adresse
+
+---
+
+### MEDECIN
+
+* **id_medecin** (PK)
+* id_utilisateur (FK → UTILISATEUR.id_utilisateur)
+* specialite
+* numero_rpps
+* ville
+* adresse_cabinet
+
+---
+
+### CRENEAU
+
+* **id_creneau** (PK)
+* id_medecin (FK → MEDECIN.id_medecin)
+* date_creneau
+* heure_debut
+* heure_fin
+* disponibilite
+
+---
+
+### RENDEZVOUS
+
+* **id_rendezvous** (PK)
+* id_patient (FK → PATIENT.id_patient)
+* id_medecin (FK → MEDECIN.id_medecin)
+* id_creneau (FK → CRENEAU.id_creneau)
+* date_heure
+* statut
+* motif
+
+---
+
+### DOCUMENT_MEDICAL
+
+* **id_document** (PK)
+* id_patient (FK → PATIENT.id_patient)
+* id_medecin (FK → MEDECIN.id_medecin)
+* type_document
+* fichier
+* date_depot
+
+---
+
+### AVIS
+
+* **id_avis** (PK)
+* id_patient (FK → PATIENT.id_patient)
+* id_medecin (FK → MEDECIN.id_medecin)
+* note
+* commentaire
+* date_avis
+
+---
+
+### NOTIFICATION
+
+* **id_notification** (PK)
+* id_rendezvous (FK → RENDEZVOUS.id_rendezvous)
+* type_notification
+* contenu
+* date_envoi
+* statut
+
+---
 
 
