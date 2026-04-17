@@ -324,99 +324,27 @@ Notification
 • Un médecin reçoit plusieurs avis.
 • Un rendez-vous déclenche plusieurs notifications.
 
-
 ---
 
 # . MLD (Modèle Logique de Données)
 
 ## Tables relationnelles
 
-### UTILISATEUR
+UTILISATEUR(id_utilisateur PK, nom, prenom, email UNIQUE, mot_de_passe, role, telephone)
 
-* **id_utilisateur** (PK)
-* nom
-* prenom
-* email (UNIQUE)
-* mot_de_passe
-* role
-* telephone
+PATIENT(id_patient PK, id_utilisateur FK → UTILISATEUR.id_utilisateur, numero_secu, date_naissance, adresse)
 
----
+MEDECIN(id_medecin PK, id_utilisateur FK → UTILISATEUR.id_utilisateur, specialite, numero_rpps, ville, adresse_cabinet)
 
-### PATIENT
+CRENEAU(id_creneau PK, id_medecin FK → MEDECIN.id_medecin, date_creneau, heure_debut, heure_fin, disponibilite)
 
-* **id_patient** (PK)
-* id_utilisateur (FK → UTILISATEUR.id_utilisateur)
-* numero_secu
-* date_naissance
-* adresse
+RENDEZVOUS(id_rendezvous PK, id_patient FK → PATIENT.id_patient, id_medecin FK → MEDECIN.id_medecin, id_creneau FK → CRENEAU.id_creneau, date_heure, statut, motif)
 
----
+DOCUMENT_MEDICAL(id_document PK, id_patient FK → PATIENT.id_patient, id_medecin FK → MEDECIN.id_medecin, type_document, fichier, date_depot)
 
-### MEDECIN
+AVIS(id_avis PK, id_patient FK → PATIENT.id_patient, id_medecin FK → MEDECIN.id_medecin, note, commentaire, date_avis)
 
-* **id_medecin** (PK)
-* id_utilisateur (FK → UTILISATEUR.id_utilisateur)
-* specialite
-* numero_rpps
-* ville
-* adresse_cabinet
-
----
-
-### CRENEAU
-
-* **id_creneau** (PK)
-* id_medecin (FK → MEDECIN.id_medecin)
-* date_creneau
-* heure_debut
-* heure_fin
-* disponibilite
-
----
-
-### RENDEZVOUS
-
-* **id_rendezvous** (PK)
-* id_patient (FK → PATIENT.id_patient)
-* id_medecin (FK → MEDECIN.id_medecin)
-* id_creneau (FK → CRENEAU.id_creneau)
-* date_heure
-* statut
-* motif
-
----
-
-### DOCUMENT_MEDICAL
-
-* **id_document** (PK)
-* id_patient (FK → PATIENT.id_patient)
-* id_medecin (FK → MEDECIN.id_medecin)
-* type_document
-* fichier
-* date_depot
-
----
-
-### AVIS
-
-* **id_avis** (PK)
-* id_patient (FK → PATIENT.id_patient)
-* id_medecin (FK → MEDECIN.id_medecin)
-* note
-* commentaire
-* date_avis
-
----
-
-### NOTIFICATION
-
-* **id_notification** (PK)
-* id_rendezvous (FK → RENDEZVOUS.id_rendezvous)
-* type_notification
-* contenu
-* date_envoi
-* statut
+NOTIFICATION(id_notification PK, id_rendezvous FK → RENDEZVOUS.id_rendezvous, type_notification, contenu, date_envoi, statut)
 
 ---
 
