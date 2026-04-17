@@ -275,7 +275,8 @@ Notification
 
 # 7. Schéma global de l’application
 
-                       Patient                         Médecin
+
+                      Patient                         Médecin
                          \                             /
                           \                           /
                            \________ Utilisent ______/
