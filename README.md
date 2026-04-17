@@ -111,14 +111,14 @@ L’application est utile car elle :
 
 Fonctionnalités :
 
-créer un compte patient
-créer un compte médecin
-se connecter
-se déconnecter
-réinitialiser le mot de passe
-modifier son profil
-gérer les comptes
-valider les comptes médecins
+- créer un compte patient
+- créer un compte médecin
+- se connecter
+- se déconnecter
+- réinitialiser le mot de passe
+- modifier son profil
+- gérer les comptes
+- valider les comptes médecins
 
 **Rôle :**
 Gérer l’identité, les rôles (patient/médecin) et la sécurité des accès
