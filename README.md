@@ -275,23 +275,27 @@ Notification
 
 # 7. Schéma global de l’application
 
-         Patient                       Médecin
-            |                                |
-            |                                |
-            +----------- Utilisent ----------+
-                            |
-                            v
-                  Interface Web / Mobile
-                            |
-                            v
-                       API Backend
-              _____________|______________
-             |             |              |
-             v             v              v
-    Base de données    Notifications    Authentification
-             |
-             v
-      Stockage documents
+                       Patient                         Médecin
+                         \                             /
+                          \                           /
+                           \________ Utilisent ______/
+                                     |
+                                     v
+                         Interface Web / Mobile
+                     (React / Application Mobile)
+                                     |
+                                     v
+                                API Backend
+                     (Node.js / Spring Boot / REST)
+        _______________________|_______________________
+       |                       |                       |
+       v                       v                       v
+ Base de données        Service Notifications   Service Authentification
+ (PostgreSQL / MySQL)        (email / push)          (JWT / sécurité)
+       |
+       v
+ Stockage des documents médicaux
+ (PDF, ordonnances, comptes rendus)
 
 
 ---
