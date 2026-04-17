@@ -274,36 +274,9 @@ Améliorer la qualité du service et superviser la plateforme.
 
 # 7. Schéma global de l’application
 
-@startuml
-title MediLink - Schéma global de l'application
 
-actor Patient
-actor Medecin
 
-rectangle "Interface Web / Mobile\n(React / App mobile)" as Frontend
-
-rectangle "API Backend\n(Node.js / Spring Boot)" as Backend
-
-database "Base de données\n(PostgreSQL / MySQL)" as DB
-
-rectangle "Service Notifications\n(Email / Push)" as Notifications
-
-rectangle "Service Authentification\n(JWT)" as Auth
-
-rectangle "Stockage Documents\n(PDF, ordonnances, comptes rendus)" as Storage
-
-Patient --> Frontend
-Medecin --> Frontend
-
-Frontend --> Backend
-
-Backend --> DB
-Backend --> Notifications
-Backend --> Auth
-Backend --> Storage
-
-@enduml
-
+a faire
 
 ---
 
