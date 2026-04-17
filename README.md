@@ -461,7 +461,151 @@ Plus tard, on pourrait séparer :
 
 ---
 
-
-
 #  3. ADR (Architecture Decision Records)
+
+
+# 📄 ADR-001 — Choix d’une architecture monolithe modulaire pour MedLink
+
+## Statut
+
+**Acceptée**
+
+## Contexte
+
+MedLink est une application de prise de rendez-vous médical reliant patients et médecins.
+
+Contraintes :
+petite équipe de développement, besoin d’un développement rapide ,absence d’infrastructure DevOps complexe, nécessité de garantir la cohérence des données (rendez-vous, créneaux, utilisateurs)
+
+## Décision
+
+Nous adoptons une architecture monolithe modulaire organisée en domaines métiers :
+
+* Gestion des utilisateurs
+* Annuaire médical
+* Gestion des rendez-vous
+* Documents médicaux
+* Notifications
+* Administration
+
+L’application est structurée en couches :
+ Controller Service Repository
+
+
+
+## Conséquences
+
+### Positives
+
+* Déploiement simple (une seule application)
+* Développement rapide
+* Bonne cohérence des données (transactions ACID)
+* Architecture claire grâce aux modules
+
+### Négatives
+
+* Scalabilité limitée (scale-up uniquement)
+* Risque d’impact global en cas de bug critique
+* Évolution vers microservices plus coûteuse
+
+## Alternatives rejetées
+
+###  Microservices
+
+* Complexité trop élevée pour le projet
+* Besoin d’infrastructure (Docker, orchestration)
+* Communication inter-services inutile à ce stade
+* Surcoût de développement et de maintenance
+
+
+
+#  ADR-002 — Choix de la base de données
+
+## Statut
+
+**Acceptée**
+
+---
+
+##  Contexte
+
+MedLink gère des données fortement liées entre elles :
+
+* utilisateurs médecins rendez-vous créneaux documents médicaux
+
+## Décision
+
+Nous choisissons :
+
+PostgreSQL pour les données principales (relationnelles), Redis pour les notifications temporaires et sessions
+
+
+##  Conséquences
+
+###  Positives
+
+* Respect des transactions (ACID)
+* Requêtes complexes facilitées
+* Bonne cohérence des données
+* Technologie mature et stable
+
+###  Négatives
+
+* Scalabilité horizontale plus complexe
+* Nécessite optimisation pour très gros volumes
+
+
+##  Alternatives rejetées
+
+### MongoDB
+
+* Pas nécessaire pour des données relationnelles
+* Perte de cohérence transactionnelle
+
+### DynamoDB
+
+* Complexité inutile pour le projet
+* Coût et vendor lock-in
+
+
+
+# 📄 ADR-003 — Choix du système de notifications
+
+## Statut
+
+**Acceptée**
+
+##  Contexte
+
+MedLink doit envoyer :confirmations de rendez-vous, rappels automatiques, notifications aux médecins et patients
+
+
+## Décision
+
+Nous utilisons un système basé sur le pattern Observer avec un service de notifications indépendant.
+
+## Conséquences
+
+### Positives
+
+* Notifications automatiques
+* Découplage entre rendez-vous et notifications
+* Facile à étendre (email, push, SMS)
+
+### Négatives
+
+* Complexité légère supplémentaire
+* Gestion des événements à surveiller
+
+---
+
+## Alternatives rejetées
+
+###  Envoi manuel de notifications
+
+* Trop rigide
+* Risque d’oubli dans le code métier
+
+---
+
 
