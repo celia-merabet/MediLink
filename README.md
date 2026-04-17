@@ -433,7 +433,7 @@ Rôle : Interface utilisateur (patient / médecin),Affichage des rendez-vous, cr
 
 # 2. Base de données : SQL vs NoSQL
 
-## notre Choix : Base de données SQL
+notre Choix : Base de données SQL
 
 ### raison ?
 
@@ -443,90 +443,25 @@ Notre application contient :
 * des données structurées
 * des contraintes fortes (sécurité médicale)
 
+ # 3. Microservices ou monolithe modulaire
+Pour ce projet, nous choisissons d’abord un monolithe modulaire.
+Justification
+•	plus simple à développer,
+•	plus simple à déployer,
+•	plus adapté à une première version,
+•	possibilité de découper plus tard en microservices si l’application grossit.
+
+Plus tard, on pourrait séparer :
+
+•	service utilisateurs,
+•	service rendez-vous,
+•	service notifications,
+•	service documents.
+
+
 ---
 
 
 
 #  3. ADR (Architecture Decision Records)
-
-## 📌 ADR 1 — Choix de l’architecture N-Tier
-
-### Contexte
-
-Nous devons concevoir une application de santé avec plusieurs utilisateurs (patients, médecins).
-
-### Décision
-
-Nous avons choisi une architecture **3-tiers (N-Tier)** :
-
-* Frontend
-* Backend API
-* Base de données
-
-### Justification
-
-* séparation claire des responsabilités
-* maintenance facile
-* évolutif
-* standard des applications web modernes
-
----
-
-## 📌 ADR 2 — Choix de SQL comme base de données
-
-### Contexte
-
-L’application manipule des données relationnelles complexes (rendez-vous, utilisateurs, médecins).
-
-### Décision
-
-Utilisation d’une base de données **SQL (MySQL/PostgreSQL)**
-
-### Justification
-
-* gestion des relations (JOIN)
-* cohérence des données (ACID)
-* sécurité adaptée aux données médicales
-* requêtes structurées efficaces
-
----
-
-## 📌 ADR 3 — Choix API REST
-
-### Contexte
-
-Frontend et backend doivent communiquer.
-
-### Décision
-
-Utilisation d’une **API REST**
-
-### Justification
-
-* standard du web
-* compatible web et mobile
-* simple à tester (Postman)
-* séparation frontend/backend
-
----
-
-##  ADR 4 — Stockage des documents
-
-### Contexte
-
-Les patients et médecins échangent des fichiers médicaux.
-
-### Décision
-
-Stockage dans un **service de fichiers externe** (ou serveur dédié)
-
-### Justification
-
-* éviter de surcharger la base SQL
-* meilleure performance
-* plus sécurisé et scalable
-
----
-
-
 
