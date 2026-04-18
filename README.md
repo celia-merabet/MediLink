@@ -273,26 +273,12 @@ Améliorer la qualité du service et superviser la plateforme.
 
 # 7. Schéma global de l’application 
 
-[ Application Mobile ]        [ Application Web ]
-           │                          │
-           └───────────┬──────────────┘
-                       │
-                [ API Backend ]
-                       │
-     ┌─────────────────┼─────────────────┐
-     │                 │                 │
-[ Services Métier ] [ Auth Service ] [ Notification Service ]
-     │
-     └───────────────┬─────────────────────────────┐
-                     │                             │
-               [ Base de données ]         [ Stockage fichiers ]
-                                              (documents médicaux)
+
 
 
 
 
 # MCD (Modèle Conceptuel de Données) : 
-
 ## Entités:
 
 * UTILISATEUR *(idUtilisateur, nom, prénom, email, motDePasse, rôle, téléphone)*
@@ -303,9 +289,7 @@ Améliorer la qualité du service et superviser la plateforme.
 * DOCUMENT_MEDICAL *(idDocument, typeDocument, fichier, dateDepot)*
 * AVIS *(idAvis, note, commentaire, dateAvis)*
 * NOTIFICATION *(idNotification, type, contenu, dateEnvoi, statut)*
-
 ---
-
 ## Relations : 
 - Un utilisateur peut être un patient.
 - Un utilisateur peut être un médecin.
