@@ -291,18 +291,18 @@ Améliorer la qualité du service et superviser la plateforme.
 
 
 
-# MCD (Modèle Conceptuel de Données)
+# MCD (Modèle Conceptuel de Données) : 
 
-## Entités
+## Entités:
 
-* **UTILISATEUR** *(idUtilisateur, nom, prénom, email, motDePasse, rôle, téléphone)*
-* **PATIENT** *(idPatient, numeroSecu, dateNaissance, adresse)*
-* **MEDECIN** *(idMedecin, specialite, numeroRPPS, ville, adresseCabinet)*
-* **CRENEAU** *(idCreneau, date, heureDebut, heureFin, disponibilite)*
-* **RENDEZVOUS** *(idRendezVous, dateHeure, statut, motif)*
-* **DOCUMENT_MEDICAL** *(idDocument, typeDocument, fichier, dateDepot)*
-* **AVIS** *(idAvis, note, commentaire, dateAvis)*
-* **NOTIFICATION** *(idNotification, type, contenu, dateEnvoi, statut)*
+* UTILISATEUR *(idUtilisateur, nom, prénom, email, motDePasse, rôle, téléphone)*
+* PATIENT *(idPatient, numeroSecu, dateNaissance, adresse)*
+* MEDECIN *(idMedecin, specialite, numeroRPPS, ville, adresseCabinet)*
+* CRENEAU *(idCreneau, date, heureDebut, heureFin, disponibilite)*
+* RENDEZVOUS *(idRendezVous, dateHeure, statut, motif)*
+* DOCUMENT_MEDICAL *(idDocument, typeDocument, fichier, dateDepot)*
+* AVIS *(idAvis, note, commentaire, dateAvis)*
+* NOTIFICATION *(idNotification, type, contenu, dateEnvoi, statut)*
 
 ---
 
