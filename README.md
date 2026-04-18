@@ -123,6 +123,68 @@ Fonctionnalités :
 **Rôle :**
 Gérer l’identité, les rôles (patient/médecin) et la sécurité des accès
 
+```mermaid
+classDiagram
+    class Utilisateur {
+        -idUtilisateur : int
+        -nom : String
+        -prenom : String
+        -email : String
+        -motDePasse : String
+        -role : Role
+        -telephone : String
+        +register() void
+        +login(email, password) String
+        +logout() void
+        +resetPassword(email) void
+        +updateProfile(data) void
+    }
+
+    class Patient {
+        <<Entity>>
+        -idPatient : int
+        -idUtilisateur : int
+        -numeroSecu : String
+        -dateNaissance : Date
+        -adresse : String
+        +getHistoriqueRdv() List
+        +deposerDocument() void
+        +laisserAvis() void
+    }
+
+    class Medecin {
+        <<Entity>>
+        -idMedecin : int
+        -idUtilisateur : int
+        -specialite : String
+        -numeroRPPS : String
+        -ville : String
+        -adresseCabinet : String
+        -approvalStatus : ApprovalStatus
+        +getAgenda() List
+        +validerCompte() void
+    }
+
+    class Role {
+        <<enumeration>>
+        PATIENT
+        MEDECIN
+        ADMINISTRATEUR
+    }
+
+    class ApprovalStatus {
+        <<enumeration>>
+        EN_ATTENTE
+        VALIDE
+        REJETE
+    }
+
+    Utilisateur <|-- Patient
+    Utilisateur <|-- Medecin
+    Utilisateur --> Role
+    Medecin --> ApprovalStatus
+
+```
 ## Domaine 2 : Annuaire médical
 
 Fonctionnalités :
