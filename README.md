@@ -273,11 +273,12 @@ Améliorer la qualité du service et superviser la plateforme.
 
 # 7. Schéma global de l’application 
 
+a faire
 
 
 
 
-
+---
 # MCD (Modèle Conceptuel de Données) : 
 ## Entités:
 
