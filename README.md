@@ -273,33 +273,34 @@ Améliorer la qualité du service et superviser la plateforme.
 
 # 7. Schéma global de l’application 
 
+
+```mermaid
 flowchart TD
 
-U[👤 Utilisateurs<br/>Patient / Médecin / Admin] --> FE[🖥️ Application Web / Mobile]
+User[Patient / Médecin / Admin] --> App[Application Web / Mobile]
 
-FE --> API[⚙️ API Backend]
+App --> API[API Backend]
 
-API --> AUTH[🔐 Authentification]
-API --> USER[👥 Gestion utilisateurs]
-API --> DOC[🔎 Annuaire médical]
-API --> SLOT[📅 Créneaux]
-API --> RDV[📌 Rendez-vous]
-API --> FILES[📁 Documents médicaux]
-API --> NOTIF[🔔 Notifications]
-API --> ADMIN[🛠️ Administration]
+API --> Auth[Authentification]
+API --> Users[Gestion utilisateurs]
+API --> Doctors[Annuaire médecins]
+API --> Schedule[Créneaux]
+API --> Appointments[Rendez-vous]
+API --> Docs[Documents médicaux]
+API --> Notifications[Notifications]
+API --> Admin[Administration]
 
-AUTH --> DB[(🗄️ Base de données)]
-USER --> DB
-DOC --> DB
-SLOT --> DB
-RDV --> DB
-FILES --> DB
-NOTIF --> DB
-ADMIN --> DB
+Auth --> DB[(Base de données)]
+Users --> DB
+Doctors --> DB
+Schedule --> DB
+Appointments --> DB
+Docs --> DB
+Notifications --> DB
+Admin --> DB
 
-FILES --> STORAGE[(☁️ Stockage fichiers)]
-
-
+Docs --> Storage[(Stockage fichiers)]
+```
 
 
 ---
