@@ -273,9 +273,6 @@ Améliorer la qualité du service et superviser la plateforme.
 
 
 # 7. Schéma global de l’application
-
-
-
 [ Application Mobile ]        [ Application Web ]
            │                          │
            └───────────┬──────────────┘
@@ -294,7 +291,6 @@ Améliorer la qualité du service et superviser la plateforme.
 
 
 
----
 
 ## MCD (Modèle Conceptuel de Données)
 
