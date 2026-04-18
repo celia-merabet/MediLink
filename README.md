@@ -273,7 +273,31 @@ Améliorer la qualité du service et superviser la plateforme.
 
 # 7. Schéma global de l’application 
 
-a faire
+flowchart TD
+
+U[👤 Utilisateurs<br/>Patient / Médecin / Admin] --> FE[🖥️ Application Web / Mobile]
+
+FE --> API[⚙️ API Backend]
+
+API --> AUTH[🔐 Authentification]
+API --> USER[👥 Gestion utilisateurs]
+API --> DOC[🔎 Annuaire médical]
+API --> SLOT[📅 Créneaux]
+API --> RDV[📌 Rendez-vous]
+API --> FILES[📁 Documents médicaux]
+API --> NOTIF[🔔 Notifications]
+API --> ADMIN[🛠️ Administration]
+
+AUTH --> DB[(🗄️ Base de données)]
+USER --> DB
+DOC --> DB
+SLOT --> DB
+RDV --> DB
+FILES --> DB
+NOTIF --> DB
+ADMIN --> DB
+
+FILES --> STORAGE[(☁️ Stockage fichiers)]
 
 
 
