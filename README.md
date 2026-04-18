@@ -271,14 +271,13 @@ Améliorer la qualité du service et superviser la plateforme.
 - dateEnvoi
 - statut
 
-
-# 7. Schéma global de l’application
+# 7. Schéma global de l’application 
 
 [ Application Mobile ]        [ Application Web ]
            │                          │
            └───────────┬──────────────┘
                        │
-                 [ API Backend ]
+                [ API Backend ]
                        │
      ┌─────────────────┼─────────────────┐
      │                 │                 │
@@ -286,13 +285,13 @@ Améliorer la qualité du service et superviser la plateforme.
      │
      └───────────────┬─────────────────────────────┐
                      │                             │
-             [ Base de données ]         [ Stockage fichiers ]
+               [ Base de données ]         [ Stockage fichiers ]
                                               (documents médicaux)
 
 
---
 
-## MCD (Modèle Conceptuel de Données)
+
+# MCD (Modèle Conceptuel de Données)
 
 ## Entités
 
