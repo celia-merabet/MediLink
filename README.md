@@ -274,10 +274,20 @@ Améliorer la qualité du service et superviser la plateforme.
 
 # 7. Schéma global de l’application
 
-
-
-
-
+[ Application Mobile ]        [ Application Web ]
+           │                          │
+           └───────────┬──────────────┘
+                       │
+                 [ API Backend ]
+                       │
+     ┌─────────────────┼─────────────────┐
+     │                 │                 │
+[ Services Métier ] [ Auth Service ] [ Notification Service ]
+     │
+     └───────────────┬─────────────────────────────┐
+                     │                             │
+             [ Base de données ]         [ Stockage fichiers ]
+                                              (documents médicaux)
 
 
 --
