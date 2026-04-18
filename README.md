@@ -328,7 +328,88 @@ Docs --> Storage[(Stockage fichiers)]
 - Un patient laisse plusieurs avis.
 - Un médecin reçoit plusieurs avis.
 - Un rendez-vous déclenche plusieurs notifications.
+```mermaid
+erDiagram
+    UTILISATEUR {
+        int idUtilisateur PK
+        string nom
+        string prenom
+        string email
+        string motDePasse
+        string role
+        string telephone
+    }
+    PATIENT {
+        int idPatient PK
+        int idUtilisateur FK
+        string numeroSecu
+        date dateNaissance
+        string adresse
+    }
+    MEDECIN {
+        int idMedecin PK
+        int idUtilisateur FK
+        string specialite
+        string numeroRPPS
+        string ville
+        string adresseCabinet
+    }
+    CRENEAU {
+        int idCreneau PK
+        int idMedecin FK
+        date date
+        time heureDebut
+        time heureFin
+        boolean disponibilite
+    }
+    RENDEZVOUS {
+        int idRendezVous PK
+        int idPatient FK
+        int idMedecin FK
+        int idCreneau FK
+        datetime dateHeure
+        string statut
+        string motif
+    }
+    DOCUMENT_MEDICAL {
+        int idDocument PK
+        int idPatient FK
+        int idMedecin FK
+        string typeDocument
+        string fichier
+        date dateDepot
+    }
+    AVIS {
+        int idAvis PK
+        int idPatient FK
+        int idMedecin FK
+        int note
+        string commentaire
+        date dateAvis
+    }
+    NOTIFICATION {
+        int idNotification PK
+        int idRendezVous FK
+        string type
+        string contenu
+        datetime dateEnvoi
+        string statut
+    }
 
+    UTILISATEUR ||--o{ PATIENT       : "est un"
+    UTILISATEUR ||--o{ MEDECIN       : "est un"
+    MEDECIN     ||--o{ CRENEAU       : "propose"
+    PATIENT     ||--o{ RENDEZVOUS    : "réserve"
+    MEDECIN     ||--o{ RENDEZVOUS    : "concerne"
+    CRENEAU     ||--o| RENDEZVOUS    : "utilise"
+    PATIENT     ||--o{ DOCUMENT_MEDICAL : "possède"
+    MEDECIN     ||--o{ DOCUMENT_MEDICAL : "dépose"
+    PATIENT     ||--o{ AVIS          : "laisse"
+    MEDECIN     ||--o{ AVIS          : "reçoit"
+    RENDEZVOUS  ||--o{ NOTIFICATION  : "déclenche"
+
+
+```
 ---
 
 # . MLD (Modèle Logique de Données)
