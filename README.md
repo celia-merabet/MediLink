@@ -2,36 +2,35 @@
 
 # Sommaire : 
 
-Présentation du projet
+-Présentation du projet
 
-Objectif de l’application
+-Objectif de l’application
 
-Problématique
+-Problématique
 
-Solution proposée
+-Solution proposée
 
-Liste des fonctionnalités
+-Liste des fonctionnalités
 
-Découpage modulaire (Bounded Contexts)
+-Découpage modulaire (Bounded Contexts)
 
-Entités métier
+-Entités métier
 
-Modèle de données (MCD / MLD)
+-Modèle de données (MCD / MLD)
 
-Architecture de l’application (N-Tier)
+-Architecture de l’application (N-Tier)
 
-Composants techniques (Controller / Service / Repository)
+-Composants techniques (Controller / Service / Repository)
 
-API REST
+-API REST
 
-Sécurité (Authentification & Autorisation)
+-Sécurité (Authentification & Autorisation)
 
-Base de données (SQL vs NoSQL)
+-Base de données (SQL vs NoSQL)
 
-ADR (Architecture Decision Records)
+-ADR (Architecture Decision Records)
 
-__
-
+---
 #### Application de prise de rendez-vous et de suivi médical
 
 #### Type :  Application web et mobile de gestion de rendez-vous médicaux et de suivi patient.
