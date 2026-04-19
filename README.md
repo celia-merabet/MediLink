@@ -30,6 +30,7 @@ Base de données (SQL vs NoSQL)
 
 ADR (Architecture Decision Records)
 
+__
 
 #### Application de prise de rendez-vous et de suivi médical
 
