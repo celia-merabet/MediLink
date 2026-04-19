@@ -1,5 +1,23 @@
-# MediLink
-#### Sujet proposé : MediLink
+# Sujet proposé : MediLink
+
+# Sommaire : 
+
+Présentation du projet
+Objectif de l’application
+Problématique
+Solution proposée
+Liste des fonctionnalités
+Découpage modulaire (Bounded Contexts)
+Entités métier
+Modèle de données (MCD / MLD)
+Architecture de l’application (N-Tier)
+Composants techniques (Controller / Service / Repository)
+API REST
+Sécurité (Authentification & Autorisation)
+Base de données (SQL vs NoSQL)
+ADR (Architecture Decision Records)
+
+
 #### Application de prise de rendez-vous et de suivi médical
 
 #### Type :  Application web et mobile de gestion de rendez-vous médicaux et de suivi patient.
