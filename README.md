@@ -18,7 +18,7 @@
 
 -Modèle de données (MCD / MLD)
 
--Architecture de l’application (N-Tier)
+-Schéma global de l’application 
 
 -Composants techniques (Controller / Service / Repository)
 
@@ -136,7 +136,7 @@ L’application est utile car elle :
 - valider les comptes médecins
 - consulter les statistiques de la plateforme
  
-# Étape 2 Tri des fonctionnalités par domaines métiers
+# Étape 2 - Tri des fonctionnalités par domaines métiers
 
 ## Domaine 1 : Gestion des utilisateurs et authentification
 
@@ -302,38 +302,6 @@ Améliorer la qualité du service et superviser la plateforme.
 - dateEnvoi
 - statut
 
-# 7. Schéma global de l’application 
-
-
-```mermaid
-flowchart TD
-
-User[Patient / Médecin / Admin] --> App[Application Web / Mobile]
-
-App --> API[API Backend]
-
-API --> Auth[Authentification]
-API --> Users[Gestion utilisateurs]
-API --> Doctors[Annuaire médecins]
-API --> Schedule[Créneaux]
-API --> Appointments[Rendez-vous]
-API --> Docs[Documents médicaux]
-API --> Notifications[Notifications]
-API --> Admin[Administration]
-
-Auth --> DB[(Base de données)]
-Users --> DB
-Doctors --> DB
-Schedule --> DB
-Appointments --> DB
-Docs --> DB
-Notifications --> DB
-Admin --> DB
-
-Docs --> Storage[(Stockage fichiers)]
-```
-
-
 ---
 # MCD (Modèle Conceptuel de Données) : 
 ## Entités:
@@ -381,6 +349,38 @@ Docs --> Storage[(Stockage fichiers)]
 **NOTIFICATION**(id_notification PK, id_rendezvous FK → RENDEZVOUS.id_rendezvous, type_notification, contenu, date_envoi, statut)
 
 ---
+
+# 7. Schéma global de l’application 
+
+
+```mermaid
+flowchart TD
+
+User[Patient / Médecin / Admin] --> App[Application Web / Mobile]
+
+App --> API[API Backend]
+
+API --> Auth[Authentification]
+API --> Users[Gestion utilisateurs]
+API --> Doctors[Annuaire médecins]
+API --> Schedule[Créneaux]
+API --> Appointments[Rendez-vous]
+API --> Docs[Documents médicaux]
+API --> Notifications[Notifications]
+API --> Admin[Administration]
+
+Auth --> DB[(Base de données)]
+Users --> DB
+Doctors --> DB
+Schedule --> DB
+Appointments --> DB
+Docs --> DB
+Notifications --> DB
+Admin --> DB
+
+Docs --> Storage[(Stockage fichiers)]
+```
+___
 
 
 # Étape 4 — Composants techniques
