@@ -3,18 +3,31 @@
 # Sommaire : 
 
 Présentation du projet
+
 Objectif de l’application
+
 Problématique
+
 Solution proposée
+
 Liste des fonctionnalités
+
 Découpage modulaire (Bounded Contexts)
+
 Entités métier
+
 Modèle de données (MCD / MLD)
+
 Architecture de l’application (N-Tier)
+
 Composants techniques (Controller / Service / Repository)
+
 API REST
+
 Sécurité (Authentification & Autorisation)
+
 Base de données (SQL vs NoSQL)
+
 ADR (Architecture Decision Records)
 
 
